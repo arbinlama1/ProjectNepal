@@ -1,0 +1,35 @@
+footer {
+    background-color: #333333;
+    color: white;
+
+    .container {
+      
+            ul {
+                li {
+                    padding-bottom: 5px;
+                    transition: all 0.4s ease-in-out;
+                    &:hover {
+                        color: $secondary-color;
+                        transform: translateX(10px);
+                    }
+                }
+                .btn-primary {
+                    border: none;
+                    background-color: $secondary-color;
+                }
+            }
+        
+
+        .payment {
+            .paymentmethod {
+                img {
+                    height: 50px;
+                    width: 350px;
+                }
+            }
+        }
+    }
+    .footer__bottom {
+        background-color: $primary-color;
+    }
+}

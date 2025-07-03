@@ -1,0 +1,29 @@
+.dear__travel {
+   padding-bottom: 5rem;
+   border-bottom: 1px solid rgb(227, 222, 222);
+    .container {
+        .content {
+            .dear__travel__head {
+                font-size: 1.13rem;
+                width: fit-content;
+                font-weight: 500;
+            }
+
+            .dear__travel__description {
+                font-size: 0.9rem;
+                a {
+                    font-weight: 600;
+                    i {
+                        font-size: 10px;
+                    }
+
+                }
+            }
+
+            .btn-primary {
+                background-color: $secondary-color;
+                right: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.best__selling {
+    .container {
+        .best__selling__item {
+            .selling__item__image {
+                position: relative;
+            }
+            .best__selling__des {
+                display: flex;
+                justify-content: space-between;
+                background-color: green;
+
+                .best__selling__day {
+                    background-color: $secondary-color;
+                }
+            }
+
+        }
+    }
+}

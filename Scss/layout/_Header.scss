@@ -1,0 +1,122 @@
+.top_header {
+    background-color: #3C812F;
+
+    .container {
+        .logo {
+            z-index: 99;
+
+            img {
+                width: 150px;
+                object-fit: cover;
+                border: 3px solid $secondary-color;
+            }
+        }
+
+        .description {
+            font-size: 14px;
+        }
+
+        .contact {
+            font-size: 13px;
+        }
+    }
+}
+
+.second_header {
+    background-color: $primary-color;
+    .second__list {
+        li {
+            a {
+                color: white;
+                padding: 1.7rem 1.1rem;
+                font-size: 0.877rem;
+                
+                i {
+                    font-size: 10px;
+                    padding: 0.2rem;
+                }
+                
+                &:hover {
+                    background-color: #e49528;
+                    color: white;
+                }
+            }
+
+
+            .about__us__innerlist {
+                display: none;
+                z-index: 99;
+                top: 100%;
+                left: 0;
+                padding: 0;
+                background-color: #D1D1D1;
+                white-space: nowrap;
+
+                li {
+                    position: relative;
+                    // z-index: 99;
+                    a {
+                        padding: 0.8rem;
+                        color: rgb(102, 102, 102);
+                        display: block;
+
+                        &:hover {
+                            color: white;
+                        }
+                    }
+
+                    .innerlist__inner {
+                        position: absolute;
+                        display: none;
+                        left: 100%;
+                        top: 0;
+                        background-color: #D1D1D1;
+
+                        li {
+                            a {
+                                color: rgb(102, 102, 102);
+
+                                &:hover {
+                                    color: white;
+                                }
+                            }
+
+                            .innerlist__inner__inner {
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 100%;
+                                background-color: #D1D1D1;
+
+                                li {
+                                    a {
+                                        color: rgb(102, 102, 102);
+
+                                        &:hover {
+                                            color: white;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            &:hover .innerlist__inner__inner {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    &:hover .innerlist__inner {
+                        display: block;
+                        padding: 0;
+                    }
+                }
+            }
+
+            &:hover .about__us__innerlist {
+                display: block;
+            }
+        }
+
+    }
+}
