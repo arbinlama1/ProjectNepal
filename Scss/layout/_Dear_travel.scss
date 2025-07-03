@@ -23,6 +23,9 @@
             .btn-primary {
                 background-color: $secondary-color;
                 right: 10px;
+                &:hover {
+                    background-color: $primary-color;
+                }
             }
         }
     }

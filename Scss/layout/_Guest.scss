@@ -1,0 +1,18 @@
+.guest {
+    .container {
+        .guest__image {
+            img {
+                height: auto;
+            }
+            .guest__comment {
+                top: 0;
+            }
+        }
+        .why__plan {
+            p {
+                padding: 0.8rem;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

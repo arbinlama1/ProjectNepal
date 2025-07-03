@@ -3,18 +3,57 @@
     .carousel {
         .carousel-item {
             img {
-                height: 500px;
+                height: 540px;
             }
         }
         .carousel-caption {
             color: white;
             left: initial;
-            bottom: inherit;
-            top: 50%;
+            bottom: initial;
+            right: 180px;
+            top: 48%;
+            white-space: wrap;
+            width: 40%;
             transform: translateY(-50%);
+            text-align: end;
+            h1 {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            p {
+                font-size: 14px;
+                line-height: 25px;
+            }
         }
         .custom-btn {
             background-color: $secondary-color;
+            &:hover {
+                background-color: $primary-color;
+            }
+        }
+    }
+    .section__hero__buttons {
+        bottom: 3rem;
+        margin-left: 3rem;
+        background-color: rgb(205, 198, 198);
+        .hero__buttons__trip {
+            .buttons__trip__list {
+                select {
+                    padding: 0 1rem;
+                    &:hover {
+                        color: white;
+                        background-color: $primary-color;
+                    }
+                }
+                .btn-primary {
+                    height: 2.5rem;
+                    width: 10rem;
+                    background-color: $secondary-color;
+                    &:hover {
+                        background-color: $primary-color;
+                    }
+                }
+            }
         }
     }
 }

@@ -141,18 +141,53 @@ footer .footer__bottom {
 }
 
 .section_hero .carousel .carousel-item img {
-  height: 500px;
+  height: 540px;
 }
 .section_hero .carousel .carousel-caption {
   color: white;
   left: initial;
-  bottom: inherit;
-  top: 50%;
+  bottom: initial;
+  right: 180px;
+  top: 48%;
+  white-space: wrap;
+  width: 40%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  text-align: end;
+}
+.section_hero .carousel .carousel-caption h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.section_hero .carousel .carousel-caption p {
+  font-size: 14px;
+  line-height: 25px;
 }
 .section_hero .carousel .custom-btn {
   background-color: #D56B24;
+}
+.section_hero .carousel .custom-btn:hover {
+  background-color: #21721b;
+}
+.section_hero .section__hero__buttons {
+  bottom: 3rem;
+  margin-left: 3rem;
+  background-color: rgb(205, 198, 198);
+}
+.section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list select {
+  padding: 0 1rem;
+}
+.section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list select:hover {
+  color: white;
+  background-color: #21721b;
+}
+.section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list .btn-primary {
+  height: 2.5rem;
+  width: 10rem;
+  background-color: #D56B24;
+}
+.section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list .btn-primary:hover {
+  background-color: #21721b;
 }
 
 .dear__travel {
@@ -179,6 +214,9 @@ footer .footer__bottom {
   background-color: #D56B24;
   right: 10px;
 }
+.dear__travel .container .content .btn-primary:hover {
+  background-color: #21721b;
+}
 
 .specialities .container .specialities__item {
   overflow: hidden;
@@ -200,8 +238,8 @@ footer .footer__bottom {
   background-color: #D56B24;
 }
 
-.best__selling .container .best__selling__item .selling__item__image {
-  position: relative;
+.best__selling .container .best__selling__item .selling__item__image:hover {
+  opacity: 0.4;
 }
 .best__selling .container .best__selling__item .best__selling__des {
   display: -webkit-box;
@@ -214,4 +252,15 @@ footer .footer__bottom {
 }
 .best__selling .container .best__selling__item .best__selling__des .best__selling__day {
   background-color: #D56B24;
+}
+
+.guest .container .guest__image img {
+  height: auto;
+}
+.guest .container .guest__image .guest__comment {
+  top: 0;
+}
+.guest .container .why__plan p {
+  padding: 0.8rem;
+  margin-bottom: 10px;
 }
