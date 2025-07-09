@@ -1,19 +1,61 @@
 .best__selling {
     .container {
-        .best__selling__item {
-            .selling__item__image {
-                // position: relative;
-                &:hover {
-                    opacity: 0.4;
+
+        nav {
+            .nav-tabs {
+                button {
+                    border: none;
+                    border-radius: 0;
+                    width: 275px;
+                    text-transform: uppercase;
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
                 }
             }
-            .best__selling__des {
-                display: flex;
-                justify-content: space-between;
-                background-color: green;
+        }
 
-                .best__selling__day {
+        .best__selling__cat {
+            ul {
+                li {
+                    width: 275px;
+
+                    &:hover {
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+        }
+
+        .items {
+            .best__selling__item {
+                .selling__item__image {
+                    &:hover {
+                        opacity: 0.4;
+                    }
+                }
+
+                &:hover .price {
+                    visibility: visible;
+                }
+
+                .price {
+                    visibility: hidden;
+                    font-size: 1.2rem;
+                    top: 0;
+                    right: 0;
                     background-color: $secondary-color;
+                }
+
+                .best__selling__des {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: green;
+
+                    .best__selling__day {
+                        background-color: $secondary-color;
+
+                    }
                 }
             }
 

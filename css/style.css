@@ -176,10 +176,15 @@ footer .footer__bottom {
 }
 .section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list select {
   padding: 0 1rem;
+  width: 175px;
 }
 .section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list select:hover {
   color: white;
   background-color: #21721b;
+}
+.section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list select:focus {
+  background-color: #BEBEBE;
+  color: black;
 }
 .section_hero .section__hero__buttons .hero__buttons__trip .buttons__trip__list .btn-primary {
   height: 2.5rem;
@@ -206,6 +211,9 @@ footer .footer__bottom {
 }
 .dear__travel .container .content .dear__travel__description a {
   font-weight: 600;
+}
+.dear__travel .container .content .dear__travel__description a:hover {
+  text-decoration: underline;
 }
 .dear__travel .container .content .dear__travel__description a i {
   font-size: 10px;
@@ -238,10 +246,35 @@ footer .footer__bottom {
   background-color: #D56B24;
 }
 
-.best__selling .container .best__selling__item .selling__item__image:hover {
+.best__selling .container nav .nav-tabs button {
+  border: none;
+  border-radius: 0;
+  width: 275px;
+  text-transform: uppercase;
+}
+.best__selling .container nav .nav-tabs button:hover {
+  background-color: #D56B24;
+}
+.best__selling .container .best__selling__cat ul li {
+  width: 275px;
+}
+.best__selling .container .best__selling__cat ul li:hover {
+  background-color: #D56B24;
+}
+.best__selling .container .items .best__selling__item .selling__item__image:hover {
   opacity: 0.4;
 }
-.best__selling .container .best__selling__item .best__selling__des {
+.best__selling .container .items .best__selling__item:hover .price {
+  visibility: visible;
+}
+.best__selling .container .items .best__selling__item .price {
+  visibility: hidden;
+  font-size: 1.2rem;
+  top: 0;
+  right: 0;
+  background-color: #D56B24;
+}
+.best__selling .container .items .best__selling__item .best__selling__des {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,7 +283,7 @@ footer .footer__bottom {
           justify-content: space-between;
   background-color: green;
 }
-.best__selling .container .best__selling__item .best__selling__des .best__selling__day {
+.best__selling .container .items .best__selling__item .best__selling__des .best__selling__day {
   background-color: #D56B24;
 }
 
@@ -263,4 +296,14 @@ footer .footer__bottom {
 .guest .container .why__plan p {
   padding: 0.8rem;
   margin-bottom: 10px;
+}
+.guest .container .accordion .accordion-item .accordion-header .accordion-button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+.guest .container .accordion .accordion-item .accordion-header .accordion-button::after {
+  background-image: url("../../asset/image/arrow-24-xxl.png");
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }

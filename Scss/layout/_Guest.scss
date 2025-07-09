@@ -14,5 +14,21 @@
                 margin-bottom: 10px;
             }
         }
+        .accordion {
+            .accordion-item {
+                .accordion-header {
+                    .accordion-button:focus {
+                        box-shadow: none;
+                        border: none;
+
+                    }
+                    .accordion-button::after {
+                       background-image: url("../../asset/image/arrow-24-xxl.png");
+                       transform: rotate(0);
+                    }
+                }
+            }
+
+        }
     }
 }

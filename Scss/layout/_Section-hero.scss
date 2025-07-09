@@ -40,10 +40,16 @@
             .buttons__trip__list {
                 select {
                     padding: 0 1rem;
+                    width: 175px;
                     &:hover {
                         color: white;
                         background-color: $primary-color;
                     }
+                    &:focus {
+                        background-color: #BEBEBE;
+                        color: black;
+                    }
+                    
                 }
                 .btn-primary {
                     height: 2.5rem;
